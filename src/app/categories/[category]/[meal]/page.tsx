@@ -45,14 +45,6 @@ export default async function MealPage({
       .replaceAll("%25", "")
       .replaceAll("%26", "&")
   );
-  console.log(
-    "https://www.themealdb.com/api/json/v1/1/search.php?s=Blueberry%20&%20lemon%20friands"
-  );
-  console.log(
-    ("https://www.themealdb.com/api/json/v1/1/search.php?s=" + meal)
-      .replaceAll("%25", "")
-      .replaceAll("%26", "&")
-  );
   const resMeal = normalizeMeal(meals[0]);
 
   if (!meal) {
